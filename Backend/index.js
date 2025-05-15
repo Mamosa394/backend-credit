@@ -17,7 +17,8 @@ const app = express();
 // ✅ Update CORS configuration to allow your frontend's port (5173)
 app.use(
   cors({
-    origin: "http://localhost:5173", // change this to match your frontend URL
+    origin: ["http://localhost:5173", // change this to match your frontend URL
+    "https://frontend-credit-ausx.vercel.app"],
     credentials: true,
   })
 );
