@@ -18,7 +18,7 @@ const app = express();
 app.use(
   cors({
     origin: ["http://localhost:5173", // change this to match your frontend URL
-    "https://frontend-credit-ausx.vercel.app"],
+    "https://frontend-credit-ausx.vercel.app","https://frontend-credit-bureau-b18j.vercel.app"],
     credentials: true,
   })
 );
